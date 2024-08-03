@@ -13,4 +13,8 @@ class Client:
     #Méthode d'affichage pour le déboggage
     def __repr__(self):
         return f"{self.prenom} {self.nom} habite à {self.adresse}, {self.ville}, {self.code_postal}, {self.pays}"
+    
+    #Méthode pour ouvrir un compte
+    def ouvrir_compte(self, compte):
+        self.comptes.append(compte)
         
