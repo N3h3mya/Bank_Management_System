@@ -22,3 +22,9 @@ class Client:
     def fermer_compte(self, numero_compte):
         self.comptes = [compte for compte in self.comptes if compte.numero != numero_compte]
         
+    #Méthode pour afficher les comptes du client
+    def afficher_comptes(self):
+        for compte in self.comptes:
+            print(f"Compte: {compte.numero_compte}, Solde: {compte.solde}")
+        
+        
