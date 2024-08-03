@@ -18,3 +18,7 @@ class Client:
     def ouvrir_compte(self, compte):
         self.comptes.append(compte)
         
+    #Méthode pour fermer un compte
+    def fermer_compte(self, numero_compte):
+        self.comptes = [compte for compte in self.comptes if compte.numero != numero_compte]
+        
